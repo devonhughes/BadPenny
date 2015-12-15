@@ -1,23 +1,18 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * A simple program to introduce the fun and excitement of random unpredictable
+ * events and all the hilarious ensuing consequences of taking this seriously!
+ * Please direct any and all Bad Penny Dates to @devonhughes and thanks for playing!
  */
 package badpenny;
 
 import java.util.Random;
 
 /**
- *
- * @author Primary
+ * @devonhughes 
  */
 public class BadPenny {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
        
         boolean penny;  
         Random randy = new Random();
@@ -34,15 +29,9 @@ public class BadPenny {
         
         for(int i = 0; i < flips; i++){
             penny = randy.nextBoolean();
-            
-            
             if(penny){
-                    System.out.println(i+1 + ". Turn Left");
-                }else{System.out.println(i+1 + ". Turn Right");}
-                    
-              
+                System.out.println(i+1 + ". Turn Left");
+            }else{System.out.println(i+1 + ". Turn Right");}
         }
-        
     }
-    
 }
